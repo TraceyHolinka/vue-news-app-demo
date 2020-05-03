@@ -1,18 +1,51 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
-</template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import gql from 'graphql-tag'
+import ArticleList from '../components/ArticleList.vue'
 
 export default {
-  name: "Home",
   components: {
-    HelloWorld
+    ArticleList
+  },
+  apollo: {
+    articles: gql`
+      query getArticles {
+        articles {
+          id
+          title
+          imageUrl
+          summary
+          postedDate
+          author {
+            id
+            name
+          }
+        }
+      }
+    `
   }
-};
+}
 </script>
+
+<template>
+  <ArticleList
+    v-if="!!articles"
+    v-bind="{ articles}"
+  >
+    <template v-slot:heading>
+      <h1 :class="$style.heading">
+        Recent Faker Articles
+      </h1>
+    </template>
+  </ArticleList>
+</template>
+
+<style module>
+.heading {
+  composes: fontSize36 from "../assets/typography.css";
+  margin: 0 0 24px;
+  text-align: center;
+  color: var(--color-secondary);
+  text-shadow: var(--color-secondary-accent) 1px 0 1px;
+}
+</style>

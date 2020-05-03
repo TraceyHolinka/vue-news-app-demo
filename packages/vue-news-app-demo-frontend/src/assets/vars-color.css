@@ -1,0 +1,17 @@
+:root {
+  --white-snow: rgba(245, 248, 247, 1);
+  --sansa-rose: rgba(186, 113, 125, 1);
+  --tyrion-purple: rgba(100, 22, 48, 1);
+  --lyanna-magenta: rgba(162, 62, 95, 1);
+  --arya-black: rgba(11, 11, 11, 1);
+
+  --color-primary: var(--white-snow);
+  --color-primary-accent: var(--lyanna-magenta);
+  --color-secondary: var(--tyrion-purple);
+  --color-secondary-accent: var(--sansa-rose);
+  --color-dark: var(--arya-black);
+
+  --color-font: var(--color-primary);
+  --color-background: var(--color-dark);
+  --color-link: var(--color-primary-accent);
+}
