@@ -23,7 +23,8 @@ function bodyText(headingWordCount, paragraphCount) {
 }
 
 function postedDate(days) {
-  return faker.date.recent(days)
+  const date = faker.date.recent(days)
+  return date.toUTCString()
 }
 
 const authors = [
