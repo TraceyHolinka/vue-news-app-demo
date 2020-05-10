@@ -9,7 +9,7 @@ export default {
   },
   data() {
     return {
-      articleId: this.articleId
+      id: parseInt(this.$route.params.id)
     }
   },
   apollo: {
@@ -31,7 +31,7 @@ export default {
       `,
       variables() {
         return {
-          id: this.$route.params.articleId
+          id: this.id
         }
       }
     }

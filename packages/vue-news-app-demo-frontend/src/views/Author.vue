@@ -8,7 +8,7 @@ export default {
   },
   data() {
     return {
-      authorId: this.authorId
+      id: parseInt(this.$route.params.id)
     }
   },
   apollo: {
@@ -36,7 +36,7 @@ export default {
       `,
       variables() {
         return {
-          id: this.$route.params.authorId
+          id: this.id
         }
       }
     }

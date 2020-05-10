@@ -14,7 +14,7 @@ export default {
       v-if="!!article.title"
       :class="$style.headline"
     >
-      <router-link :to="{ name: 'article', params: { articleId: article.id } }">
+      <router-link :to="{ name: 'article', params: { id: article.id } }">
         {{ article.title }}
       </router-link>
     </h2>
@@ -27,7 +27,7 @@ export default {
       v-if="showAuthor && !!article.author && !!article.author.name"
       :class="$style.author"
     >
-      By <router-link :to="{ name: 'author', params: { authorId: article.author.id } }">
+      By <router-link :to="{ name: 'author', params: { id: article.author.id } }">
         {{ article.author.name }}
       </router-link>
     </p>

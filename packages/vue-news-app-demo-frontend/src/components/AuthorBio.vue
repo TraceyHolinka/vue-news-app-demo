@@ -15,11 +15,11 @@ export default {
 <template>
   <section :class="$style.authorBio">
     <header>
-      <router-link :to="{ name: 'author', params: { authorId: author.id } }">
-        <h1 :class="$style.heading">
+      <h1 :class="$style.heading">
+        <router-link :to="{ name: 'author', params: { id: author.id } }">
           {{ author.name }}
-        </h1>
-      </router-link>
+        </router-link>
+      </h1>
     </header>
     <div :class="$style.avatar">
       <Avatar v-if="!!showAvatar" />
