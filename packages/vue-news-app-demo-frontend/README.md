@@ -38,6 +38,11 @@ yarn jest path/TestName.spec.js
 yarn run test:e2e
 ```
 
+### Run Storybook
+```
+yarn storybook:serve
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
@@ -64,3 +69,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 - [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)
 - [Apollo devtools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm)
+
+### To use Vue Dev Tools with Storybook
+- install [electron](https://electronjs.org/)
+- then run
+
+```
+yarn devtools
+```
