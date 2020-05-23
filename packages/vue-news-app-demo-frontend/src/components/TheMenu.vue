@@ -73,7 +73,7 @@ export default {
   fill: var(--color-dark);
 }
 .nav {
-  composes: fontHeadingSm from "../assets/typography.css";
+  composes: fontSize20 from "../assets/typography.css";
   color: var(--color-dark);
   font-weight: bold;
 }

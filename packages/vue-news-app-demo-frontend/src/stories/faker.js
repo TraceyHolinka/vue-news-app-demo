@@ -10,10 +10,12 @@ export const words6 = faker.lorem.words(6)
 export const words7 = faker.lorem.words(7)
 export const words8 = faker.lorem.words(8)
 export const words9 = faker.lorem.words(9)
+
 export const sentences2 = faker.lorem.sentences(2)
 export const sentences3 = faker.lorem.sentences(3)
 export const sentences4 = faker.lorem.sentences(4)
 export const sentences5 = faker.lorem.sentences(5)
+export const sentences10 = faker.lorem.sentences(10)
 export const sentences15 = faker.lorem.sentences(15)
 
 export function uuid() {

@@ -4,27 +4,20 @@ import Authors from '../components/Authors.vue'
 import AuthorBio from '../components/AuthorBio.vue'
 import Image from './assets/animals1.jpg'
 import Avatar from './assets/avatar.png'
+import * as faker from './faker'
+
+const article = {
+  imageUrl: Image,
+  postedDate: 'Fri Aug 17 2018 08:17:20 GMT-0400 (EDT)',
+  title: 'Headline for Faker Article',
+  summary:  faker.sentences10,
+}
 
 const author = {
   name: 'Faker Author',
   avatarUrl: Avatar,
-  bio: 'Et omnis consequatur quisquam eos. Rem voluptatem blanditiis non dolorum nihil vel laborum veniam. Consequuntur nam eligendi optio rerum aliquam ratione et qui. Nihil temporibus ut magni eveniet vel qui. Blanditiis nostrum provident voluptatem inventore sint architecto mollitia. Sit consequatur quaerat aspernatur consequatur vero fugit. Voluptas qui odio nobis cum dignissimos magnam molestiae. Nihil doloribus est temporibus mollitia quasi ipsa laudantium iusto.',
-  articles: [
-    {
-      id: 0,
-      imageUrl: Image,
-      postedDate: 'Fri Aug 17 2018 08:17:20 GMT-0400 (EDT)',
-      title: 'Headline for Faker Article',
-      summary: 'Quam sed est quis distinctio quia perspiciatis eum. Quisquam ab quo mollitia. Et ut et doloremque. Aut similique aut explicabo unde neque nobis voluptatem. Quis doloremque nostrum sint distinctio expedita error.'
-    },
-    {
-      id: 1,
-      imageUrl: Image,
-      postedDate: 'Fri Aug 17 2018 08:17:20 GMT-0400 (EDT)',
-      title: 'Headline for Faker Article',
-      summary: 'Quam sed est quis distinctio quia perspiciatis eum. Quisquam ab quo mollitia. Et ut et doloremque. Aut similique aut explicabo unde neque nobis voluptatem. Quis doloremque nostrum sint distinctio expedita error.'
-    }
-  ]
+  bio: faker.sentences15,
+  articles: [1, 2].map(x => ({ ...article, id: x }))
 }
 
 storiesOf('Authors', module)

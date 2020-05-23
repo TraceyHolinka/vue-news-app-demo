@@ -6,7 +6,7 @@
 
 <style module>
   .footer {
-    composes: fontBase from "../assets/typography.css";
+    composes: fontSize16 from "../assets/typography.css";
     margin: 48px 16px 24px;
     font-weight: bold;
 

@@ -49,7 +49,7 @@ export default {
   }
   .headline {
     margin: 0 0 20px;
-    composes: fontHeadingSm from "../assets/typography.css";
+    composes: fontSize20 from "../assets/typography.css";
     font-weight: bold;
   }
   .imageLead {
@@ -62,7 +62,7 @@ export default {
     border-radius: 25px;
   }
   .summary {
-    composes: fontBase from "../assets/typography.css";
+    composes: fontSize16 from "../assets/typography.css";
     margin: 0 0 16px;
   }
 </style>
