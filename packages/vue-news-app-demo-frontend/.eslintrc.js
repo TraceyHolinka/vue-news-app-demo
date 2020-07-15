@@ -5,7 +5,7 @@ module.exports = {
     node: true
   },
 
-  extends: ["plugin:vue/essential", "eslint:recommended"],
+  extends: ["plugin:vue/essential"],
 
   parserOptions: {
     parser: 'babel-eslint'
@@ -14,8 +14,9 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'no-debugger': 'off',
-    'vue/no-v-html': 'off'
-
+    'vue/no-v-html': 'off',
+    semi: ['error', 'never'],
+    quotes: [2, 'single']
   },
 
   overrides: [
@@ -31,7 +32,6 @@ module.exports = {
   ],
 
   'extends': [
-    'plugin:vue/recommended',
-    'eslint:recommended'
+    'plugin:vue/recommended'
   ]
 };
