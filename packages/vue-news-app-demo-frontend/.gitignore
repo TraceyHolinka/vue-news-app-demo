@@ -19,3 +19,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Testing results directories and files
+/tests/e2e/screenshots
+/tests/e2e/videos
