@@ -1,0 +1,7 @@
+{
+  "name": "vue-news-app-demo",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
