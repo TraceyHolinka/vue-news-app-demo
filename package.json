@@ -1,6 +1,12 @@
 {
   "name": "vue-news-app-demo",
   "private": true,
+  "scripts": {
+    "backend": "lerna run backend --stream",
+    "serve": "lerna run serve --stream",
+    "devtools": "lerna run vue-devtools --stream",
+    "storybook": "lerna run storybook:serve --stream"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }
