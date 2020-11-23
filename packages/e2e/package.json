@@ -1,0 +1,12 @@
+{
+  "name": "vue-news-app-demo-e2e",
+  "version": "1.1.0",
+  "description": "Vue news app Demo End-to-end esting for News",
+  "author": "TraceyHolinka <tracey.holinka@gmail.com>",
+  "scripts": {
+    "e2e": "yarn run cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^5.6.0"
+  }
+}

@@ -33,11 +33,6 @@ yarn run test:unit
 yarn jest path/TestName.spec.js
 ```
 
-### Run your e2e tests
-```
-yarn run test:e2e
-```
-
 ### Run Storybook
 ```
 yarn storybook:serve
@@ -53,7 +48,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - [Vue Apollo](https://github.com/Akryum/vue-apollo)
 - [Jest Testing Framework ](http://facebook.github.io/jest/docs/en/getting-started.html)
 - [Vue.js Unit Testing Library](https://vue-test-utils.vuejs.org/en/)
-- [Cypress E2E Testing Framework](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html#Cypress-Can-Be-Simple-Sometimes)
 
 ## Developer Experience
 
