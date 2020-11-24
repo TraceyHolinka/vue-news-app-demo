@@ -1,14 +1,13 @@
 {
-  "name": "frontend",
+  "name": "storybook",
   "author": "TraceyHolinka <traceyholinka@gmail.com>",
   "version": "1.1.0",
   "private": true,
+  "main": "config/main.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "devtools": "vue-devtools",
+    "storybook:build": "vue-cli-service storybook:build -c config",
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config"
   },
   "dependencies": {
     "core-js": "^3.6.5",

@@ -1,7 +1,7 @@
 {
-  "name": "vue-news-app-demo-e2e",
+  "name": "cypress",
   "version": "1.1.0",
-  "description": "Vue news app Demo End-to-end esting for News",
+  "description": "Vue news app demo end-to-end testing",
   "author": "TraceyHolinka <tracey.holinka@gmail.com>",
   "scripts": {
     "e2e": "yarn run cypress open"

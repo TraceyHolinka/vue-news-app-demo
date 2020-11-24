@@ -1,5 +1,5 @@
 <script>
-import { getters, mutations } from '../store.js';
+import { getters, mutations } from '../store.js'
 import ArticleCard from './ArticleCard'
 import ListContainer from './ListContainer'
 import ToggleSwitch from './ToggleSwitch'

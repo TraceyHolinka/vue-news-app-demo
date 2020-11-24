@@ -1,4 +1,4 @@
-import ToggleSwitch from '../components/ToggleSwitch'
+import ToggleSwitch from '../../frontend/src/components/ToggleSwitch'
 import { words2 } from './faker'
 
 const label = words2

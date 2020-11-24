@@ -1,6 +1,6 @@
-import Article from '../components/Article.vue'
-import ArticleCard from '../components/ArticleCard.vue'
-import ArticleList from '../components/ArticleList.vue'
+import Article from '../../frontend/src/components/Article.vue'
+import ArticleCard from '../../frontend/src/components/ArticleCard.vue'
+import ArticleList from '../../frontend/src/components/ArticleList.vue'
 import Image from './assets/nature3.jpg'
 import * as faker from './faker'
 

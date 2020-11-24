@@ -17,14 +17,12 @@ export default {
 
 <template>
   <ListContainer>
-    <template v-slot>
-      <AuthorBio
-        v-for="author in authors"
-        :key="author.id"
-        :class="$style.item"
-        v-bind="{ author}"
-      />
-    </template>
+    <AuthorBio
+      v-for="author in authors"
+      :key="author.id"
+      :class="$style.item"
+      v-bind="{ author}"
+    />
   </ListContainer>
 </template>
 
