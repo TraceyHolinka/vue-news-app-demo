@@ -1,7 +1,7 @@
-import Article from '../../frontend/src/components/Article.vue'
-import ArticleCard from '../../frontend/src/components/ArticleCard.vue'
-import ArticleList from '../../frontend/src/components/ArticleList.vue'
-import Image from './assets/nature3.jpg'
+import Article from '@th/frontend/src/components/Article.vue'
+import ArticleCard from '@th/frontend/src/components/ArticleCard.vue'
+import ArticleList from '@th/frontend/src/components/ArticleList.vue'
+import Image from '../assets/nature3.jpg'
 import * as faker from './faker'
 
 const article = {

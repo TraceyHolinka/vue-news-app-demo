@@ -29,7 +29,7 @@ export default {
 
 <template>
   <div>
-    <header v-if="this.$slots.heading">
+    <header v-if="$slots.heading">
       <slot name="heading" />
     </header>
     <div :class="$style.toggle">

@@ -1,9 +1,8 @@
-import { storiesOf } from '@storybook/vue'
-import Author from '../../frontend/src/components/Author.vue'
-import Authors from '../../frontend/src/components/Authors.vue'
-import AuthorBio from '../../frontend/src/components/AuthorBio.vue'
-import Image from './assets/animals1.jpg'
-import Avatar from './assets/avatar.png'
+import Author from '@th/frontend/src/components/Author.vue'
+import Authors from '@th/frontend/src/components/Authors.vue'
+import AuthorBio from '@th/frontend/src/components/AuthorBio.vue'
+import Image from '../assets/animals1.jpg'
+import Avatar from '../assets/avatar.png'
 import * as faker from './faker'
 
 const article = {
@@ -20,34 +19,34 @@ const author = {
   articles: [1, 2].map(x => ({ ...article, id: x }))
 }
 
-storiesOf('Authors', module)
-.add('Author Bio',() => ({
-    components: { AuthorBio },
-    template: '<AuthorBio v-bind="{ author }" />',
-    data() {
-      return {
-        author
-      }
-    }
-  }),
-  { notes: 'Used in Author View and Authors View.' }
-)
-.add('Author Page', () => ({
-  components: { Author },
-  template: '<Author v-bind="{ author }" />',
-  data() {
-    return {
-      author
-    }
-  }
-}))
-.add('Author List', () => ({
-  components: { Authors },
-  template: '<Authors v-bind="{ authors }" />',
-  data() {
-    return {
-      authors: [1, 2, 3 ].map(x => ({ ...author, id: x }))
+export default { title: 'Authors'}
 
+export const CardDefault = () => ({
+  components: { AuthorBio },
+  props: {
+    author: {
+      default: () => author,
     }
-  }
-}))
+  },
+  template: '<AuthorBio v-bind="{ author }" />'
+})
+
+export const AuthorPage = () => ({
+  components: { Author },
+  props: {
+    author: {
+      default: () => author,
+    }
+  },
+  template: '<Author v-bind="{ author }" />'
+})
+
+export const AuthorList = () => ({
+  components: { Authors },
+  props: {
+    authors: {
+      default: () => [1, 2, 3 ].map(x => ({ ...author, id: x })),
+    }
+  },
+  template: '<Authors v-bind="{ authors }" />'
+})
