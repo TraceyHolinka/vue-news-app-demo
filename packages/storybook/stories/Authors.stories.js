@@ -1,27 +1,14 @@
 import Author from '@th/frontend/src/components/Author.vue'
 import Authors from '@th/frontend/src/components/Authors.vue'
 import AuthorBio from '@th/frontend/src/components/AuthorBio.vue'
-import Image from '../assets/animals1.jpg'
-import Avatar from '../assets/avatar.png'
-import * as faker from './faker'
+import {author} from './data'
 
-const article = {
-  imageUrl: Image,
-  postedDate: 'Fri Aug 17 2018 08:17:20 GMT-0400 (EDT)',
-  title: 'Headline for Faker Article',
-  summary:  faker.sentences10,
+
+export default {
+  title: 'Authors'
 }
 
-const author = {
-  name: 'Faker Author',
-  avatarUrl: Avatar,
-  bio: faker.sentences15,
-  articles: [1, 2].map(x => ({ ...article, id: x }))
-}
-
-export default { title: 'Authors'}
-
-export const CardDefault = () => ({
+export const Card = () => ({
   components: { AuthorBio },
   props: {
     author: {

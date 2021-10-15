@@ -1,64 +1,47 @@
+import ArticleList from '@th/frontend/src/components/ArticleList.vue'
 import Article from '@th/frontend/src/components/Article.vue'
 import ArticleCard from '@th/frontend/src/components/ArticleCard.vue'
-import ArticleList from '@th/frontend/src/components/ArticleList.vue'
-import Image from '../assets/nature3.jpg'
-import * as faker from './faker'
+import {articles, article} from './data'
 
-const article = {
-  author: {
-    id: 0,
-    name: 'Faker Author'
-  },
-  id: 0,
-  imageUrl: Image,
-  postedDate: 'Fri Aug 17 2018 08:17:20 GMT-0400 (EDT)',
-  summary:  faker.sentences10,
-  title: faker.words6
+export default {
+  title: 'Articles'
 }
 
-export default { title: 'Articles'}
-
-export const CardDefault = () => ({
+export const Card = (args) => ({
+  title: 'Article Card',
   components: { ArticleCard },
-  template: `<ArticleCard v-bind="{ article }" />`,
+  template: `<ArticleCard v-bind="{ article, showAuthor, showImageLead }" />`,
   props: {
-    article: {
-      default: () => article,
-    }
+    article: { default: article },
+    ...args
   }
 })
 
-export const CardWithoutAuthor = () => ({
-  components: { ArticleCard },
-  template: `<ArticleCard v-bind="{ article, showAuthor: false }" />`,
-  props: {
-    article: {
-      default: () => article,
+Card.args = {
+  showAuthor: true,
+  showImageLead: true
+}
+
+export const List = (args) => ({
+  title: 'Article List',
+  components: { ArticleList },
+  template: `<ArticleList v-bind="{ articles, title, showImageLead }" />`,
+    props: {
+      articles: {default: articles},
+      title: {default: 'Recent Faker News'},
+      ...args
     }
-  }
 })
 
-export const AritcleDefault = () => ({
+List.args = {
+  showImageLead: false
+}
+
+export const Page = () => ({
   components: { Article },
   template: `<Article v-bind="{ article }" />`,
   props: {
-    article: {
-      default: () => ({
-        ...article,
-        body:
-        `<h2>${faker.words9}</h2><p>${faker.sentences5}</p><p>${faker.sentences15}</p><h3>${faker.words9}</h3><p>${faker.sentences5}</p><p>${faker.sentences15}</p><p>${faker.sentences10}</p>`,
-      }),
+    article: {default: article,
     }
-  }
-})
-
-export const ListDefault = () => ({
-  components: { ArticleList },
-  template: `<ArticleList v-bind="{ articles, title }" />`,
-  props: {
-    default: () => ({
-      articles: [1, 2, 3 ].map(x => ({ ...article, id: x })),
-      title: 'Recent Faker News'
-    })
   }
 })

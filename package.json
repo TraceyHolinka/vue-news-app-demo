@@ -1,11 +1,14 @@
 {
   "name": "vue-news-app-demo",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "backend": "lerna run backend --stream",
     "frontend": "lerna run serve --stream",
     "e2e": "lerna run e2e --stream",
-    "devtools": "lerna run vue-devtools",
+    "devtools": "lerna  exec --scope \"@th/storybook\" -- yarn vue-devtools",
     "storybook": "lerna exec --scope \"@th/storybook\" -- yarn storybook:serve",
     "storybook:build": "lerna exec --scope \"@th/storybook\" -- yarn @th/storybook:build"
   },

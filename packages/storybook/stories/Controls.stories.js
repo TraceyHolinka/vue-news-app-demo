@@ -1,19 +1,27 @@
-import Switch from '@th/frontend/src/components/ToggleSwitch'
+import ToggleSwitch from '@th/frontend/src/components/ToggleSwitch'
 import { words2 } from './faker'
 
 const label = words2
 
 export default { 
   title: 'Controls',
+  parameters: {
+    docs: {
+      description: {
+        component: 'Toggle away',
+      },
+    },
+  },
 }
 
-export const ToggleSwitch = (args, { argTypes })  => ({
-  components: { Switch },
-  template: `<Switch v-bind="{ disabled, toggled }">${label}</Switch>`,
-  props: Object.keys(argTypes),
+export const ToggleSwitchDefault = (args)  => ({
+  components: { ToggleSwitch },
+  template: `<ToggleSwitch v-bind="{ disabled, toggled }">${label}</ToggleSwitch>`,
+  props: args
 })
-
-ToggleSwitch.args = {
+ToggleSwitchDefault.args = {
   disabled: false,
   toggled: false,
 }
+ToggleSwitchDefault.storyName = 'Toggle Switch'
+

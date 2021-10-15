@@ -12,11 +12,14 @@ export default {
   },
   props: {
     articles: { type: Array, required: true },
-    title: { type: String, required: false, default: null },
-    showImageLead: { type: Boolean, required: false, default: true },
+    title: { type: String, required: false },
+    showImageLead: { type: Boolean, default: true }
   },
     computed: {
-    ...getters
+    ...getters,
+    showImages() {
+      return this.showImageLead && this.toggled
+    }
   },
     methods: {
     ...mutations,
@@ -34,6 +37,7 @@ export default {
     </header>
     <div :class="$style.toggle">
       <ToggleSwitch
+        v-if="showImageLead"
         v-bind="{ toggled }"
         @click="toggleSwitch"
       >
@@ -44,7 +48,7 @@ export default {
       <ArticleCard
         v-for="article in articles"
         :key="article.id"
-        v-bind="{ article, showImageLead: !toggled }"
+        v-bind="{ article, showImageLead }"
       />
     </ListContainer>
   </div>
