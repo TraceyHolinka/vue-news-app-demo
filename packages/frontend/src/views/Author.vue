@@ -48,7 +48,7 @@ export default {
   <div>
     <Author
       v-if="!!author"
-      v-bind="{ author }"
+      v-bind="{ author, showImageLead: true }"
     />
   </div>
 </template>

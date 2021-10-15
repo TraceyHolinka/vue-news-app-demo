@@ -23,3 +23,6 @@ export const author = {
     bio: faker.sentences15,
     articles: [1, 2].map(x => ({ ...article, id: x }))
 }
+
+export const authors= [1, 2, 3 ].map(x => ({ ...author, id: x }))
+

@@ -3,16 +3,12 @@ module.exports = {
   env: {
     node: true
   },
-  'extends': [
-    'plugin:vue/essential',
-    'eslint:recommended'
-  ],
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
+  'extends': ['plugin:vue/vue3-recommended'],
+  'parser': 'vue-eslint-parser',
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'vue/require-default-prop': 0
   },
   overrides: [
     {

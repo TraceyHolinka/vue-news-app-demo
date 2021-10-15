@@ -7,7 +7,7 @@ export default {
   },
   props: {
     author: { type: Object, required: true },
-    showAvatar: { type: Boolean, requried: false, default: true }
+    showAvatar: { type: Boolean, default: true }
   }
 }
 </script>
