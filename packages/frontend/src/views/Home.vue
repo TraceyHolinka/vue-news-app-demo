@@ -33,7 +33,10 @@ export default {
     v-bind="{ articles }"
   >
     <template v-slot:heading>
-      <h1 :class="$style.heading">
+      <h1
+        data-test="home-heading"
+        :class="$style.heading"
+      >
         Recent Faker Articles
       </h1>
     </template>

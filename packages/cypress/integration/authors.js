@@ -1,16 +1,13 @@
 describe ('Authors Page', () => {
 
-  const authorBio = '[class*="AuthorBio_authorBio"]'
-  const authorLink = '[class*="AuthorBio_heading"]'
+  const authorBio = '[data-test="author-bio"]'
+  const authorLink = '[data-test="author-heading"]'
 
   describe ('loads correctly', () => {
 
     it('bios', () => {
       cy.visit('/authors')
-      cy.get(authorBio)
-      .should(($el) => {
-        expect($el.length).to.be.at.least(1)
-      })
+      cy.get(authorBio).should('exist')
     })
 
   })

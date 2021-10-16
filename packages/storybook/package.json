@@ -18,7 +18,7 @@
     "@storybook/addon-essentials": "v6.3.8",
     "@storybook/addon-links": "v6.3.8",
     "@storybook/vue": "v6.3.8",
-    "@th/eslint": "0.1.0",
+    "eslint-config": "0.1.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-unit-jest": "~4.5.0",

@@ -33,6 +33,7 @@ export default {
     </p>
     <p
       v-if="!!article.summary"
+      data-test="card-summary"
       :class="$style.summary"
     >
       {{ article.summary }}

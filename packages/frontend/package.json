@@ -7,7 +7,6 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -22,7 +21,7 @@
     "@babel/plugin-transform-async-to-generator": "^7.12.1",
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
-    "@th/eslint": "0.1.0",
+    "eslint-config": "0.1.0",
     "@vue/cli-plugin-babel": "~4.5.8",
     "@vue/cli-plugin-eslint": "~4.5.8",
     "@vue/cli-plugin-unit-jest": "~4.5.8",

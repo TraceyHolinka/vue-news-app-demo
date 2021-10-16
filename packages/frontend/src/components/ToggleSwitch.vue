@@ -9,6 +9,7 @@
 
 <template>
   <label
+    data-test="toggle-label"
     :class="[$style.label, { [$style.disabled]: disabled }]"
   >
     <slot />

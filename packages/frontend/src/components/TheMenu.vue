@@ -13,7 +13,8 @@ export default {
       v-click-outside="close"
       :class="$style.menu"
     >
-      <div 
+      <div
+        data-test="menu-close"
         :class="$style.closeIcon"
         @click="close"
       >

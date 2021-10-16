@@ -1,7 +1,7 @@
 describe ('Article Page', () => {
 
-  const articleBody = '[class*="Article_body"]'
-  const authorLink ='[class*="Article_author"] a'
+  const articleBody = '[data-test="article-body"]'
+  const authorLink ='[data-test="article-author"] a'
 
   describe('loads correctly', () => {
 

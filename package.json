@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "bootstrap": "lerna bootstrap --force-local",
     "backend": "lerna run backend --stream",
     "frontend": "lerna run serve --stream",
     "e2e": "lerna run e2e --stream",
