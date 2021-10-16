@@ -25,16 +25,21 @@ Card.args = {
   showAvatar: true
 }
 
-export const List = () => ({
+export const List = (args) => ({
   title: 'Author List',
   components: { Authors },
   props: {
     authors: {
       default: () => authors,
-    }
+    },
+    ...args
   },
-  template: '<Authors v-bind="{ authors }" />'
+  template: '<Authors v-bind="{ authors, showAvatar }" />'
 })
+
+List.args = {
+  showAvatar: true
+}
 
 export const Page = (args) => ({
   title: 'Author Page',

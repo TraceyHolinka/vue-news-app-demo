@@ -10,7 +10,8 @@ export default {
   },
   props: {
     authors: { type: Array, required: true },
-    toggled: { type: Boolean, required: false, default: false}
+    showAvatar: { type: Boolean, required: false },
+    toggled: { type: Boolean, default: false}
   }
 }
 </script>
@@ -21,7 +22,7 @@ export default {
       v-for="author in authors"
       :key="author.id"
       :class="$style.item"
-      v-bind="{ author}"
+      v-bind="{ author, showAvatar}"
     />
   </ListContainer>
 </template>
