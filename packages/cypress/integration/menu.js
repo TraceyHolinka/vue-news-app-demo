@@ -1,7 +1,7 @@
 describe ('Hamburger Menu', () => {
 
-  const hamburgerButton = '[class*="TheHeader_button"]'
-  const close ='[class*="TheMenu_closeIcon"]'
+  const hamburgerButton = '[data-test="hamburger-button"]'
+  const close ='[data-test="menu-close"]'
 
   describe('loads correctly', () => {
 

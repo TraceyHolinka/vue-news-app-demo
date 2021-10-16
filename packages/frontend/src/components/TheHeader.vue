@@ -34,6 +34,7 @@ export default {
       aria-haspopup="true"
       aria-owns="hamburger-menu"
       type="button"
+      data-test="hamburger-button"
       :class="$style.button"
       @click="() => openHamburgerMenu()"
     >

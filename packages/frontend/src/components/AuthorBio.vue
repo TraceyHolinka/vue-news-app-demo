@@ -13,9 +13,15 @@ export default {
 </script>
 
 <template>
-  <section :class="$style.authorBio">
+  <section
+      data-test="author-bio"
+      :class="$style.authorBio"
+  >
     <header>
-      <h1 :class="$style.heading">
+      <h1
+          data-test="author-heading"
+          :class="$style.heading"
+      >
         <router-link :to="{ name: 'author', params: { id: author.id } }">
           {{ author.name }}
         </router-link>

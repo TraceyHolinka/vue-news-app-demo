@@ -20,6 +20,7 @@ export default {
       </h1>
       <p
         v-if="!!article.author.name"
+        data-test="article-author"
         :class="$style.author"
       >
         By
@@ -43,6 +44,7 @@ export default {
     >
     <section
       :class="$style.body"
+      data-test="article-body"
       v-html="article.body"
     />
   </article>
@@ -51,9 +53,6 @@ export default {
 <style module>
 .article {
 	margin: 0 16px 48px;
-	@media (min-width: 768px) {
-		margin: 0 0 48px;
-	}
 }
 .header {
 	margin-bottom: 24px;
@@ -107,5 +106,11 @@ export default {
 	& p {
 		margin: 0 0 16px;
 	}
+}
+
+@media (min-width: 768px) {
+  article {
+    margin: 0 0 48px;
+  }
 }
 </style>

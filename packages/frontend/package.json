@@ -7,13 +7,12 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.12",
-    "vue-apollo": "^3.0.5",
+    "vue-apollo": "^3.0.8",
     "vue-router": "^3.4.7"
   },
   "devDependencies": {
@@ -22,23 +21,21 @@
     "@babel/plugin-transform-async-to-generator": "^7.12.1",
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
-    "@th/eslint": "0.1.0",
+    "@th/eslint-config": "0.1.0",
     "@vue/cli-plugin-babel": "~4.5.8",
     "@vue/cli-plugin-eslint": "~4.5.8",
     "@vue/cli-plugin-unit-jest": "~4.5.8",
     "@vue/cli-service": "^4.5.8",
     "@vue/devtools": "^5.3.3",
     "@vue/test-utils": "^1.1.0",
-    "axios": "^0.21.0",
+    "axios": "^0.23.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^26.6.1",
-    "eslint": "^7.12.0",
-    "eslint-plugin-vue": "^7.1.0",
-    "faker": "^4.1.0",
+    "babel-jest": "^27.2.5",
+    "eslint": "^8.0.1",
+    "eslint-plugin-vue": "^7.19.1",
     "graphql-tag": "^2.11.0",
     "postcss-preset-env": "^6.6.0",
-    "postcss-pxtorem": "^5.1.1",
     "vue-cli-plugin-apollo": "^0.22.2",
     "vue-template-compiler": "^2.6.12"
   }

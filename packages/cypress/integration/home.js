@@ -1,8 +1,8 @@
 describe('Home Page', () => {
 
-  const heading = '[class*="Home_heading"]'
-  const summary = '[class*="ArticleCard_summary"]'
-  const toggleSwitch = '[class*="ToggleSwitch_label"]'
+  const heading = '[data-test="home-heading"]'
+  const summary = '[data-test="card-summary"]'
+  const toggleSwitch = '[data-test="toggle-label"]'
 
   describe('loads correctly', () => {
     
@@ -12,17 +12,11 @@ describe('Home Page', () => {
     })
 
     it('images',() => {
-      cy.get('img')
-      .should(($el) => {
-        expect($el.length).to.be.at.least(1)
-      })
+      cy.get('img').should('exist')
     })
 
     it('articles',() => {
-      cy.get(summary)
-      .should(($el) => {
-        expect($el.length).to.be.at.least(1)
-      })
+      cy.get(summary).should('exist')
     })
 
   })
@@ -31,18 +25,12 @@ describe('Home Page', () => {
 
     it('togle hides images on click', () => {
       cy.get(toggleSwitch).click()
-      cy.get('img')
-      .should(($el) => {
-        expect($el).to.have.length = 0
-      })
+      cy.get('img').should('not.exist')
     })
   
     it('on toggle click images return', () => {
       cy.get(toggleSwitch).click()
-      cy.get('img')
-      .should(($el) => {
-        expect($el).to.have.length > 0
-      })
+      cy.get('img').should('exist')
     })
 
     it('loads an article page', () => {

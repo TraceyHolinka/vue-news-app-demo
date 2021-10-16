@@ -2,7 +2,7 @@
 import Vue from 'vue'
 
 const state = Vue.observable({
-  toggled: false
+  toggled: true
 })
 
 export const getters =  {
