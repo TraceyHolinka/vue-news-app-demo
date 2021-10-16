@@ -48,7 +48,7 @@ export default {
       <ArticleCard
         v-for="article in articles"
         :key="article.id"
-        v-bind="{ article, showImageLead }"
+        v-bind="{ article, showImageLead: showImages, }"
       />
     </ListContainer>
   </div>
