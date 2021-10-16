@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "@th/backend",
   "description": "Vue news app Demo Backend with GraphQL",
   "version": "1.1.0",
   "author": "TraceyHolinka <traceyholinka@gmail.com>",
@@ -8,12 +8,12 @@
     "backend": "node server"
   },
   "dependencies": {
-    "apollo-server-express": "^2.18.2",
+    "apollo-server-express": "2.25.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "faker": "^5.1.0",
     "graphql": "^15.3.0",
-    "graphql-tools": "^7.0.0"
+    "graphql-tools": "^8.2.0"
   }
 }

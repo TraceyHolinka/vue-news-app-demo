@@ -1,5 +1,5 @@
 {
-  "name": "cypress",
+  "name": "@th/cypress",
   "version": "1.1.0",
   "description": "Vue news app demo end-to-end testing",
   "author": "TraceyHolinka <tracey.holinka@gmail.com>",
@@ -7,6 +7,6 @@
     "e2e": "yarn run cypress open"
   },
   "devDependencies": {
-    "cypress": "^5.6.0"
+    "cypress": "^8.3.1"
   }
 }

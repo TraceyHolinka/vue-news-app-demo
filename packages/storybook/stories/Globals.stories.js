@@ -1,6 +1,6 @@
-import TheHeader from '../../frontend/src/components/TheHeader.vue'
-import menu from '../../frontend/src/data/menu.json'
-import TheFooter from '../../frontend/src/components/TheFooter.vue'
+import TheHeader from '@th/frontend/src/components/TheHeader.vue'
+import menu from '@th/frontend/src/data/menu.json'
+import TheFooter from '@th/frontend/src/components/TheFooter.vue'
 
 export default {title: 'Globals'}
 

@@ -30,7 +30,7 @@ export default {
 <template>
   <ArticleList
     v-if="!!articles"
-    v-bind="{ articles}"
+    v-bind="{ articles }"
   >
     <template v-slot:heading>
       <h1 :class="$style.heading">

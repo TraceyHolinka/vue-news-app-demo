@@ -9,7 +9,7 @@ yarn install
 ## Run Storybook
 
 ```bash
-yarn storybook:serve
+yarn storybook3:serve
 ```
 
 ## Documentation

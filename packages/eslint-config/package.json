@@ -1,0 +1,12 @@
+{
+  "name": "@th/eslint",
+  "version": "0.1.0",
+  "description": "global eslint config for vue",
+  "author": "TraceyHolinka <tracey.holinka@gmail.com>",
+  "homepage": "https://github.com/TraceyHolinka/vue-news-app-demo#readme",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TraceyHolinka/vue-news-app-demo.git"
+  }
+}

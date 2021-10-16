@@ -10,7 +10,7 @@ export default {
   },
   props: {
     author: { type: Object, required: true },
-    showImageLead: { type: Boolean, required: false, default: true }
+    showImageLead: { type: Boolean, default: true }
   }
 }
 </script>
@@ -20,19 +20,7 @@ export default {
     <AuthorBio v-bind="{author}" />
     <ArticleList
       v-if="!!author.articles"
-      v-bind="{ articles: author.articles }"
+      v-bind="{ articles: author.articles, showImageLead }"
     />
   </div>
 </template>
-
-<style module>
-    .author {
-      margin: 0 16px;
-      @media (min-width: 768px) {
-        margin: 0;
-      }
-    }
-    .card {
-      margin: 16px 0;
-    }
-</style>

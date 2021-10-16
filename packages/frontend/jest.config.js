@@ -4,8 +4,7 @@ module.exports = {
   transform: {
     '^.+\\.vue$': 'vue-jest',
     '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
-    '^.+\\.jsx?$': 'babel-jest',
-    "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
+    '^.+\\.jsx?$': 'babel-jest'
   },
   transformIgnorePatterns: ['/node_modules/'],
   moduleNameMapper: {
