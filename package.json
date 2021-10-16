@@ -8,6 +8,7 @@
     "bootstrap": "lerna bootstrap --force-local",
     "backend": "lerna run backend --stream",
     "frontend": "lerna run serve --stream",
+    "test:unit": "lerna run test:unit --stream",
     "e2e": "lerna run e2e --stream",
     "devtools": "lerna  exec --scope \"@th/storybook\" -- yarn vue-devtools",
     "storybook": "lerna exec --scope \"@th/storybook\" -- yarn storybook:serve",

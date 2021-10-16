@@ -12,8 +12,8 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "faker": "^5.1.0",
-    "graphql": "^15.3.0",
+    "faker": "^5.5.3",
+    "graphql": "^15.6.1",
     "graphql-tools": "^8.2.0"
   }
 }

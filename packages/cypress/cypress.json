@@ -1,4 +1,5 @@
 {
   "baseUrl": "http://localhost:8080",
-  "pluginsFile": "plugins/index.js"
+  "pluginsFile": "plugins/index.js",
+  "video": false
 }

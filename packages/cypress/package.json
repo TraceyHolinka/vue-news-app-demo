@@ -4,7 +4,9 @@
   "description": "Vue news app demo end-to-end testing",
   "author": "TraceyHolinka <tracey.holinka@gmail.com>",
   "scripts": {
-    "e2e": "yarn run cypress open"
+    "e2e": "yarn cypress run",
+    "e2e:open": "yarn cypress run open"
+
   },
   "devDependencies": {
     "cypress": "^8.6.0"
