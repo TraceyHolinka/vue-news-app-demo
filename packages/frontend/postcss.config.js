@@ -1,6 +1,5 @@
 module.exports = {
   plugins: [
-    require('postcss-pxtorem')(),
     require('postcss-preset-env')({
       stage: 0,
       features: {
